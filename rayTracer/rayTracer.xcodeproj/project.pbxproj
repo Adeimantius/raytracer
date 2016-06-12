@@ -10,7 +10,7 @@
 		AC45D9C31CF2AE8D00391A3F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC45D9C21CF2AE8D00391A3F /* main.cpp */; };
 		AC45D9CA1CF2DFAE00391A3F /* vec3.h in Sources */ = {isa = PBXBuildFile; fileRef = AC45D9C91CF2DFAD00391A3F /* vec3.h */; };
 		AC58029C1CF61E1A00F084BB /* vec3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC58029B1CF61E1A00F084BB /* vec3.cpp */; };
-		AC58029F1CF626AF00F084BB /* ray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC58029E1CF626AF00F084BB /* ray.cpp */; };
+		AC9DD2441D0E25C200BADCDA /* hitablelist.h in Sources */ = {isa = PBXBuildFile; fileRef = AC9DD2431D0E25C200BADCDA /* hitablelist.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,7 +31,9 @@
 		AC45D9C91CF2DFAD00391A3F /* vec3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vec3.h; sourceTree = "<group>"; };
 		AC58029B1CF61E1A00F084BB /* vec3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vec3.cpp; sourceTree = "<group>"; };
 		AC58029D1CF626A300F084BB /* ray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ray.h; sourceTree = "<group>"; };
-		AC58029E1CF626AF00F084BB /* ray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ray.cpp; sourceTree = "<group>"; };
+		AC9DD2421D0E056700BADCDA /* hitable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hitable.h; sourceTree = "<group>"; };
+		AC9DD2431D0E25C200BADCDA /* hitablelist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hitablelist.h; sourceTree = "<group>"; };
+		AC9DD2461D0E28A400BADCDA /* sphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sphere.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +70,9 @@
 				AC45D9C91CF2DFAD00391A3F /* vec3.h */,
 				AC58029B1CF61E1A00F084BB /* vec3.cpp */,
 				AC58029D1CF626A300F084BB /* ray.h */,
-				AC58029E1CF626AF00F084BB /* ray.cpp */,
+				AC9DD2421D0E056700BADCDA /* hitable.h */,
+				AC9DD2431D0E25C200BADCDA /* hitablelist.h */,
+				AC9DD2461D0E28A400BADCDA /* sphere.h */,
 			);
 			path = rayTracer;
 			sourceTree = "<group>";
@@ -129,7 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC58029F1CF626AF00F084BB /* ray.cpp in Sources */,
+				AC9DD2441D0E25C200BADCDA /* hitablelist.h in Sources */,
 				AC45D9CA1CF2DFAE00391A3F /* vec3.h in Sources */,
 				AC45D9C31CF2AE8D00391A3F /* main.cpp in Sources */,
 				AC58029C1CF61E1A00F084BB /* vec3.cpp in Sources */,

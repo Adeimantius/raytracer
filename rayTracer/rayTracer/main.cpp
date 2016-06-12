@@ -9,23 +9,17 @@
 #include <iostream>
 #include "ray.h"
 #include "vec3.h"
-bool hitSphere (const vec3& center, float radius, const ray &r ) {
-    vec3 oc = r.origin() - center;
-    float a = r.direction().dot(r.direction());
-    float b = 2 * r.direction().dot(oc);
-    float c = oc.dot(oc) - (radius * radius);
-    float discriminant = (b * b) - (4 * a * c);
-    // if discriminant is > 0, the ray intersects the sphere twice
-    // if discriminant is == 0, the ray is tangent to the sphere
-    // if discriminant is < 0, the ray does not intersect the sphere
-    return (discriminant > 0);
-};
+#include "sphere.h"
+
 vec3 color(const ray &r){
-    if(hitSphere(vec3(0,0,-1), 0.5, r)){
-        return vec3(1.0, 0.0, 0.0);
+//    sphere s = new hit::sphere();
+    float t = hitSphere(vec3(0,0,-1), 0.5, r);
+    if (t > 0.0) {
+        vec3 N = unitVector(r.pointAtParameter(t) - vec3 (0, 0, -1));
+        return 0.5*vec3(N.x + 1, N.y + 1, N.z + 1);
     }
     vec3 unitDirection = unitVector(r.direction());
-    float t = 0.5 * unitDirection.y + 1.0;
+    t = 0.5 * (unitDirection.y + 1.0);
     return (1.0 - t) * vec3(1.0, 1.0, 1.0) + t * vec3(0.5, 0.7, 1.0);
 }
 
