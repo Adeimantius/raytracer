@@ -36,6 +36,9 @@
 		AC9DD2461D0E28A400BADCDA /* sphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sphere.h; sourceTree = "<group>"; };
 		AC9DD2471D0E3B9000BADCDA /* camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camera.h; sourceTree = "<group>"; };
 		AC9DD2481D0E7E3400BADCDA /* material.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = material.h; sourceTree = "<group>"; };
+		AC9DD24B1D0F193D00BADCDA /* lambertian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lambertian.h; sourceTree = "<group>"; };
+		AC9DD24C1D0F207400BADCDA /* metal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metal.h; sourceTree = "<group>"; };
+		AC9DD24D1D0F2A0F00BADCDA /* MathUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathUtil.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,9 @@
 				AC9DD2461D0E28A400BADCDA /* sphere.h */,
 				AC9DD2471D0E3B9000BADCDA /* camera.h */,
 				AC9DD2481D0E7E3400BADCDA /* material.h */,
+				AC9DD24B1D0F193D00BADCDA /* lambertian.h */,
+				AC9DD24C1D0F207400BADCDA /* metal.h */,
+				AC9DD24D1D0F2A0F00BADCDA /* MathUtil.h */,
 			);
 			path = rayTracer;
 			sourceTree = "<group>";

@@ -2,14 +2,17 @@
 #define SPHEREH
 
 #include "hitable.h"
+#include "material.h"
 
 class sphere: public hitable {
 public:
-    sphere() {};
-    sphere(vec3 cen, float r) : center(cen), radius(r) {};
+//    sphere() {};
+//    sphere(vec3 cen, float r) : center(cen), radius(r) {};
+    sphere(vec3 cen, float r, const material mat) : center(cen), radius(r), m_material(mat) {};
     virtual bool hit(const ray& r, float tMin, float tMax, hitRecord& rec) const;
     vec3 center;
     float radius;
+    const material& m_material;
 
 };
 

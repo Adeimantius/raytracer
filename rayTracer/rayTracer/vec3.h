@@ -164,4 +164,24 @@ inline vec3 unitVector(vec3 v)
 {
     return v / v.length();
 }
+inline vec3 randomInUnitSphere(){
+    vec3 p;
+    float theta = 2 * 3.14 * rand();
+    float phi = acos(1 - 2 * rand());
+    float x = sin(phi) * cos(theta);
+    float y = sin(phi) * sin(theta);
+    float z = cos(phi);
+    
+    return vec3(x, y, z);
+}
+inline vec3 randomInUnitDisk(){
+    vec3 p;
+    float theta = 2 * 3.14 * rand();
+    float phi = acos(1 - 2 * rand());
+    float x = sin(phi) * cos(theta);
+    float y = sin(phi) * sin(theta);
+    float z = 0;
+    
+    return vec3(x, y, z);
+}
 #endif
