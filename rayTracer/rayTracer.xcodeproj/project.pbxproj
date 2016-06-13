@@ -34,6 +34,8 @@
 		AC9DD2421D0E056700BADCDA /* hitable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hitable.h; sourceTree = "<group>"; };
 		AC9DD2431D0E25C200BADCDA /* hitablelist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hitablelist.h; sourceTree = "<group>"; };
 		AC9DD2461D0E28A400BADCDA /* sphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sphere.h; sourceTree = "<group>"; };
+		AC9DD2471D0E3B9000BADCDA /* camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camera.h; sourceTree = "<group>"; };
+		AC9DD2481D0E7E3400BADCDA /* material.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = material.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,8 @@
 				AC9DD2421D0E056700BADCDA /* hitable.h */,
 				AC9DD2431D0E25C200BADCDA /* hitablelist.h */,
 				AC9DD2461D0E28A400BADCDA /* sphere.h */,
+				AC9DD2471D0E3B9000BADCDA /* camera.h */,
+				AC9DD2481D0E7E3400BADCDA /* material.h */,
 			);
 			path = rayTracer;
 			sourceTree = "<group>";
